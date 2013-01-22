@@ -1,10 +1,10 @@
 x = 1
 
-foo = Proc.new do |x|
+foo = Proc.new do
   puts "In a proc. X is valued at #{x}"
 end
 
-foo.call(24)
+foo.call
 
 
 bar = lambda { |x| puts "In a lambda. X is valued at #{x}"}
