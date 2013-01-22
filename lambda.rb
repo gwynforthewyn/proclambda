@@ -16,10 +16,11 @@ puts "#{x}"
 
 def runnable
   puts "Inside runnable."
-  yield(x)
+  yield("orange")
   puts "Still inside runnable."
 end
 
-runnable do
+runnable do |x|
   puts "I am a block."
+  puts "And I have an #{x}"
 end
