@@ -16,7 +16,7 @@ puts "#{x}"
 
 def runnable
   puts "Inside runnable."
-  yield
+  yield(x)
   puts "Still inside runnable."
 end
 
